@@ -1,0 +1,21 @@
+
+<table>
+    <thead>
+        <tr>
+        
+            <th scope="col"> NAME</th>
+            <th scope="col"> LASTNAME</th>
+            <th scope="col"> EMAIL</th>
+            <th scope="col"> PASSWORD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let getdata of userdetailsvalue ">
+            
+            <td>{{getdata.name |uppercase}}</td>
+            <td>{{getdata.lastname |uppercase}}</td>
+            <td>{{getdata.email |uppercase}}</td>
+            <td>{{getdata.password |uppercase}}</td>
+        </tr>
+    </tbody>
+</table>

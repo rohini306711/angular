@@ -1,0 +1,35 @@
+
+<div>
+<mat-toolbar color="primary" class="a"> LOGIN FORM</mat-toolbar>
+
+<mat-card>
+    <form class="example-form" [formGroup]="signInForm" (ngSubmit)="signIn()">
+    
+        <mat-form-field class="example-full-width">
+          <mat-label>name</mat-label>
+          
+          <input matInput placeholder="" value="" formControlName="name" type="text">
+          <mat-icon matSuffix>person</mat-icon>
+
+        </mat-form-field>
+    <br><br>
+            <mat-form-field class="example-full-width" >
+              <mat-label>password</mat-label>
+              <input matInput placeholder="" value="" formControlName="password" type="password">
+              <mat-icon matSuffix></mat-icon>
+
+            </mat-form-field>
+            <br><br>
+        <button type="submit" color="primary" mat-raised-button> login</button> <br><br>
+         <button (click)="next()" color="primary" mat-raised-button> click to register </button> 
+      </form>
+</mat-card>
+</div> 
+
+
+
+
+
+
+
+ 
